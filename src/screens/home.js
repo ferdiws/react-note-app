@@ -45,7 +45,6 @@ const Home = ({ noteList, setCurrentPage }) => (
       <FlatList
         showsVerticalScrollIndicator={false}
         data={noteList}
-        // Berikan function "setCurrentPage" ke component "NoteCard"
         renderItem={({ item }) => (
           <NoteCard item={item} setCurrentPage={setCurrentPage} />
         )}
